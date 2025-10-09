@@ -1,0 +1,26 @@
+{
+  "name": "tweeter-clone",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "javascript",
+    "backend",
+    "nivja"
+  ],
+  "license": "ISC",
+  "author": "Nivesh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1",
+    "prettier": "^3.6.2"
+  }
+}

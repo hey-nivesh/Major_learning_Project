@@ -1,0 +1,1 @@
+export const DB_NAME = "major_learning_project"
