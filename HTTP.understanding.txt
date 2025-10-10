@@ -1,0 +1,58 @@
+HTTP ----> Hyper Text Trasnfer Protocol
+
+Q. What are HTTP Headers?
+
+-> metadata ------> key-value sent along with request and response
+   For example:
+   caching, authentication, manage state
+
+   * Request Headers ---> From client
+   * Response Headers ---> From server
+   * Representation Haeders ---> Encoding/ Compression
+   * Payload Headers ---> Data
+
+------------------------------------------------------------------------
+
+MOST COMMON HEADERS :
+ * Accept: Application/JSON
+ * Users: Agent
+ * Authorigation
+ * Content: Type
+ * Cookie
+ * Cache - Control
+
+CORS:
+ * Access - Control - Allow - Origin
+ * Access - Control - Allow - Credentials
+ * Access - Control - Allow - Method
+
+SECURITY:
+ * Cross - Origin - Embedded - Policy
+ * Cross - Origin - Openers - Policy
+ * Content - Security - Policy
+ * X - XCS - Protection
+
+--------------------------------------------------------------------------
+
+HTTP METHODS :-
+
+Basic set of operation that can be used to interect with server.
+
+ * GET: retrieve a resource 
+ * HEAD: no message body (response Headers only)
+ * OPTIONS: what operations are available
+ * TRACE: loopback test (get some data)
+ * DELETE: remove a resource
+ * PUT: replace a resource
+ * POST: interact with resource (mostly add)
+ * PATCH: change part of a resource
+
+ -------------------------------------------------------------------------
+
+HTTP STATUS CODE :-
+
+* 1xx Informational
+* 2xx Success
+* 3xx Redirection
+* 4xx Client error
+* 5xx server error
