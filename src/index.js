@@ -35,4 +35,14 @@ dotenv.config({
     path: "./env"
 })
 
+
+
 connectDB()
+.then(()=>{
+    app.listen(process.env.PORT, ()=>{
+        console.log(`Server is listening on port ${process.env.PORT}`)
+    })
+})
+.catch((error)=>{
+    console.log("Error in connecting to DB", error)
+})
