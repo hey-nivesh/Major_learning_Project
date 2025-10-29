@@ -32,13 +32,15 @@ import dotenv from "dotenv"
 import connectDB from "./db/index.js"
 
 dotenv.config({
-    path: "./env"
+    path: ".env"
 })
 
 
 
 connectDB()
-.then(()=>{
+.then(async()=>{
+    const appModule = await import('./app.js')
+    const app = appModule.default
     app.listen(process.env.PORT, ()=>{
         console.log(`Server is listening on port ${process.env.PORT}`)
     })
