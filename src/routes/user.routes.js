@@ -22,7 +22,7 @@ router.route("/register").post(
                 }
             ])(req, res, next);
         } else {
-            // Skip multer for JSON requests
+            // Skip multer for JSON requestsl
             next();
         }
     },
